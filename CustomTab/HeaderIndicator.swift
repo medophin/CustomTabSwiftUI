@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct HeaderIndicator:View {
-    var items: [String]
+    
     
     @ObservedObject var h_model: HeaderIndicatorViewmodel
     
@@ -17,16 +17,16 @@ struct HeaderIndicator:View {
             HStack {
                 Spacer().frame(width: 4)
                 
-                ForEach (0..<items.count) { i in
-                    if(i == (items.count - 1 ) ) {
+                ForEach (0..<h_model.items.count) { i in
+                    if(i == (h_model.items.count - 1 ) ) {
                         H_indButton(model: h_model,
-                                    button_name: items[i],
+                                    button_name: h_model.items[i],
                                     id:i
                         )
                         
                     }else {
                         H_indButton(model: h_model,
-                                    button_name: items[i],
+                                    button_name: h_model.items[i],
                                     id:i
                         )
                         
@@ -99,6 +99,6 @@ struct H_indButton:View {
 }
 struct Headerindicator_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderIndicator( items:  ["page1","page2","page3"],h_model: HeaderIndicatorViewmodel() )
+        HeaderIndicator(h_model: HeaderIndicatorViewmodel(items:["page1","page2","page3"]) )
     }
 }

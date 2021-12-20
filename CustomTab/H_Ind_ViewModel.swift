@@ -14,7 +14,11 @@ final class HeaderIndicatorViewmodel : ObservableObject {
     @Published var insdeGeoOffset: CGFloat = 0
     var lastOnAppearInd:Int? = nil
     var lastOnDisAppearInd:Int? = nil
+    var items: [String]
     
+    init(items: [String]) {
+        self.items = items
+    }
     
     func changeTab(onAppearInd:Int? = nil , onDisAppearInd:Int? = nil) {
         
