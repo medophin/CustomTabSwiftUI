@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E7A31C7E277026E500DD9164 /* ViewExtractor in Frameworks */ = {isa = PBXBuildFile; productRef = E7A31C7D277026E500DD9164 /* ViewExtractor */; };
+		E7A31C802770422D00DD9164 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A31C7F2770422D00DD9164 /* View+Ext.swift */; };
 		E7B6B1B2276C7DB600A24147 /* CustomTabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B6B1B1276C7DB600A24147 /* CustomTabApp.swift */; };
 		E7B6B1B4276C7DB600A24147 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B6B1B3276C7DB600A24147 /* ContentView.swift */; };
 		E7B6B1B6276C7DB800A24147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B6B1B5276C7DB800A24147 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E7A31C7F2770422D00DD9164 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		E7B6B1AE276C7DB600A24147 /* CustomTab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B6B1B1276C7DB600A24147 /* CustomTabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabApp.swift; sourceTree = "<group>"; };
 		E7B6B1B3276C7DB600A24147 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				E7B6B1B3276C7DB600A24147 /* ContentView.swift */,
 				E7B6B1B5276C7DB800A24147 /* Assets.xcassets */,
 				E7B6B1B7276C7DB800A24147 /* Preview Content */,
+				E7A31C7F2770422D00DD9164 /* View+Ext.swift */,
 			);
 			path = CustomTab;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A31C802770422D00DD9164 /* View+Ext.swift in Sources */,
 				E7B6B1B4276C7DB600A24147 /* ContentView.swift in Sources */,
 				E7B6B1C4276C7EFD00A24147 /* H_Ind_ViewModel.swift in Sources */,
 				E7B6B1C3276C7EFD00A24147 /* HeaderIndicator.swift in Sources */,

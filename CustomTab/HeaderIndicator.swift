@@ -64,33 +64,19 @@ struct H_indButton:View {
     
     var body:some View {
         ZStack {
-            if(model.highlightIndex == id) {
-                Color(hex:"6A6280").offset(x: -model.insdeGeoOffset, y: 0)
-            }
-            else if (model.insdeGeoOffset > 0) && (model.highlightIndex == id + 1){
+            if(model.selectedIndex == id) {
                 Color(hex:"6A6280")
-                Color(hex:"2C2835").offset(x: -model.insdeGeoOffset, y: 0)
             }
-            else if (model.insdeGeoOffset < 0) && (model.highlightIndex == id - 1){
-                Color(hex:"6A6280")
-                Color(hex:"2C2835").offset(x: -model.insdeGeoOffset, y: 0)
+            else {
+                Color(hex:"2C2835")
             }
             
             HStack {
                 Spacer()
                 Text(button_name).foregroundColor(.white)
-//                Text("\(model.highlightIndex)").foregroundColor(.white)
-//                Text("\(id)").foregroundColor(.white)
-                
                 Spacer()
             }
-           
-            
-        }
-//        .background(() ?
-//
-//        )
-        
+        }        
         .onTapGesture {
             model.selectedAndHighlight(id)
         }
